@@ -201,7 +201,7 @@ button:last-child:hover {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 560px) {
     .wrapper {
         gap: 15px;
         flex-direction: column;
@@ -222,13 +222,13 @@ button:last-child:hover {
     .content .buttons button{
         width: 100%;
         padding: 5px 0;
-        font-size: 10px;
+        font-size: 7px;
         font-weight: 700;
         border-radius: 6px;
     }
 
     .content .row .price {
-        font-size: 20px;
+        font-size: 16px;
         font-weight: 700;
     }
 
