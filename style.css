@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* body {
+    background-color: #303030;
+} */
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    min-height: 100vh;
+    background-color: #303030;
+}
+
+.wrapper {
+    position: relative;
+    max-width: 1130px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wrapper .cart-nav {
+    position: absolute;
+    top: -20%;
+    right: 0;
+    width: 130px;
+    padding: 12px 15px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.cart-nav .icon i {
+    font-size: 20px;
+}
+
+.cart-nav .item-numb {
+    font-size: 15px;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 21px;
+    color: #fff;
+    background-color: #000;
+    border: 1px solid #000;
+}
+
+.wrapper .card {
+    position: relative; /* This line */
+    width: calc(33% - 13px);
+    border-radius: 12px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.wrapper .card img{
+    width: 100%;
+    border-radius: 12px;
+    transition: all 0.2s ease;
+}
+
+.wrapper .card:hover img{
+    transform: scale(1.1) rotate(10deg);
+}
+
+/* ဒီနေရာမှာ hover effect ကအဓိက position နဲ့ ကစားသွား */
+.wrapper .card .content{
+    position: absolute;
+    width: 100%;
+    background-color: #000;
+    bottom: -50%;
+    padding: 10px 20px 22px 20px;
+    color: #fff;
+    opacity: 0.93;
+    transition: all 0.1s ease;
+}
+
+.wrapper .card:hover .content{
+    bottom: 0;
+    transform: all 0.2s ease;
+}
+
+.card .content .row,
+.card .content .buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content .row .details span {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.content .row .details p {
+    font-size: 15px;
+    font-weight: 400;
+    color: #555555;
+}
+
+.content .row .price {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.content .buttons {
+    margin-top: 20px;
+}
+
+.content .buttons button{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 12px;
+    border: 2px solid #000;
+    cursor: pointer;
+    outline: none;
+    text-transform: uppercase;
+    transition: 0.2s;
+}
+
+.buttons button:first-child {
+    background-color: #fff;
+    margin-right: 10px;
+}
+
+button:first-child:hover {
+    color: #fff;
+    background-color: #000;
+}
+
+.buttons button:last-child {
+    color: #fff;
+    background-color: #000;
+    margin-left: 10px;
+}
+
+button:last-child:hover {
+    border: 2px solid #fff;
+}
