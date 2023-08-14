@@ -63,6 +63,7 @@ main {
     border-radius: 12px;
     background-color: #fff;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .wrapper .card img{
